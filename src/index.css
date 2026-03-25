@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 140 20% 98%;
+    --foreground: 147 25% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 147 25% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 147 25% 14%;
+
+    --primary: 150 67% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-mid: 150 65% 40%;
+
+    --secondary: 140 30% 90%;
+    --secondary-foreground: 147 25% 14%;
+
+    --muted: 140 20% 96%;
+    --muted-foreground: 150 14% 39%;
+
+    --accent: 44 90% 61%;
+    --accent-foreground: 147 25% 14%;
+
+    --accent-dark: 44 100% 42%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 143 20% 85%;
+    --input: 143 20% 85%;
+    --ring: 150 67% 33%;
+
+    --radius: 1rem;
+
+    --charcoal: 147 25% 8%;
+    --surface: 140 20% 97%;
+    --green-light: 148 70% 90%;
+
+    --font-head: 'Poppins', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    cursor: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-head);
+  }
+}
+
+@layer utilities {
+  .font-head {
+    font-family: var(--font-head);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@keyframes scroll-line {
+  0%, 100% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0.3; transform: translateY(8px); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
