@@ -73,7 +73,7 @@ const Footer = () => (
           © 2025 UPYA — Uwezo Pamoja Youths Association. All rights reserved.{" "}
           <a href="#" className="text-primary">Privacy Policy</a>
         </p>
-        <div className="bg-accent/10 border border-accent/20 text-accent px-3.5 py-1.5 rounded-full text-xs font-semibold">
+        <div className="bg-accent/10 border border-accent/20 text-accent px-3.5 py-1.5 mr-10 rounded-full text-xs font-semibold">
           🌿 Proudly Made in Kenya
         </div>
       </div>
