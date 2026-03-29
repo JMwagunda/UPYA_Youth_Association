@@ -3,7 +3,8 @@ import HeroSection from "@/components/HeroSection";
 import MarqueeBand from "@/components/MarqueeBand";
 import AboutSection from "@/components/AboutSection";
 import StatsSection from "@/components/StatsSection";
-import ProgramsSection from "@/components/ProgramsSection";
+import EventsGallerySection from "@/components/EventsGallerySection";
+import UpcomingEventsSection from "@/components/UpcomingEventsSection";
 import ImpactSection from "@/components/ImpactSection";
 import DonateSection from "@/components/DonateSection";
 import TeamSection from "@/components/TeamSection";
@@ -20,7 +21,8 @@ const Index = () => (
     <MarqueeBand />
     <AboutSection />
     <StatsSection />
-    <ProgramsSection />
+    <EventsGallerySection />
+    <UpcomingEventsSection />
     <ImpactSection />
     <DonateSection />
     <TeamSection />
