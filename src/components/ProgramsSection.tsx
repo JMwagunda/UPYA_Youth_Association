@@ -26,7 +26,7 @@ const ProgressBar = ({ pct }: { pct: number }) => {
 
   return (
     <div className="h-1 bg-border rounded-full mb-3">
-      <div ref={ref} className="h-full rounded-full bg-primary transition-all duration-[1.5s] ease-out" style={{ width: 0 }} />
+      <div ref={ref} className="h-full rounded-full bg-primary transition-all duration-1500 ease-out" style={{ width: 0 }} />
     </div>
   );
 };

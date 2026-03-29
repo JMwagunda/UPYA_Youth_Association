@@ -79,6 +79,9 @@ export default {
         "fade-in-up": "fadeInUp 0.8s ease-out",
         "fade-in": "fadeIn 0.6s ease-out",
       },
+      transitionDuration: {
+        "1500": "1500ms",
+      },
       keyframes: {
         fadeInUp: {
           "0%": { opacity: "0", transform: "translateY(30px)" },

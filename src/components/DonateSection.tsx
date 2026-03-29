@@ -17,7 +17,7 @@ const MiniFill = ({ pct }: { pct: number }) => {
     obs.observe(el);
     return () => obs.disconnect();
   }, [pct]);
-  return <div ref={ref} className="h-full rounded-md bg-primary transition-all duration-[1.5s]" style={{ width: 0 }} />;
+  return <div ref={ref} className="h-full rounded-md bg-primary transition-all duration-1500" style={{ width: 0 }} />;
 };
 
 const DonateSection = () => {
